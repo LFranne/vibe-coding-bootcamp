@@ -1,6 +1,7 @@
 import Welcome from "@/components/Welcome";
 import ShimmerQuote from "@/components/ShimmerQuote";
 import BootcampFooter from "@/components/BootcampFooter";
+import ConfettiCelebration from "@/components/ConfettiCelebration";
 
 export default function Home() {
   const motto = process.env.NEXT_PUBLIC_MOTTO;
@@ -11,6 +12,7 @@ export default function Home() {
         {motto ? <ShimmerQuote text={motto} /> : <Welcome />}
       </div>
 
+      <ConfettiCelebration />
       <BootcampFooter />
     </main>
   );
